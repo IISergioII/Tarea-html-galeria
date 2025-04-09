@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 200; 
+    box-sizing: border-box;
+}
+
+body {
+    height: 200px;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, nav {
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+    overflow: hidden;
+    background-color: rgb(178, 171, 171);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+li a:hover {
+    background-color: black;
+    color: red;
+}
+
+.hero {
+    height: 500px;
+    width: 100%;
+    background-image: url("images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.text-hero {
+    height: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    text-shadow: 12px 12px 35px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hero h1 {
+    font-size: 100px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+    background-color: #a19e9e;
+}
+
+.galeria img {
+    width: 250px;
+    height: auto;
+    border-radius: 300%;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+    transition: transform 0.5s;
+
+}
+
+.galeria img:hover {
+    transform: scale(1.8);
+}
+
+.gif-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 25%;
+    transition: transform 0.2s linear;
+}
